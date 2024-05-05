@@ -25,8 +25,10 @@ let video = document.createElement("iframe");
             video.setAttribute("height", "550px");
 
 btn.addEventListener("click", function(){
-   
-   const APIURL = `https://api.nasa.gov/planetary/apod?date=${inputvals.value}&api_key=${APIKEY}`
+   if(inpvals.value === ""){
+       alert("Please Enter the date")'
+   }else{
+       const APIURL = `https://api.nasa.gov/planetary/apod?date=${inputvals.value}&api_key=${APIKEY}`
    console.log(APIURL);
          
 fetch(APIURL)
@@ -53,4 +55,6 @@ fetch(APIURL)
 }).finally(() => {
     console.log("runned")
 })
+   }
+   
 });
