@@ -2,8 +2,10 @@ document.addEventListener("click", function(e){
     // console.log(e.target);
     if(e.target.classList.contains("img-fluid")){
         // console.log(e.target);
-        const src = e.target.getAttribute("src");
-        document.querySelector(".modal-img").src = src;
+       const src = e.target.getAttribute("src");
+        let modalimg = document.querySelector(".modal-img");
+        modalimg.src = src;
+        modalimg.setAttribute("class", "modal-img");
         const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
         myModal.show();
      
