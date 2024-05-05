@@ -82,4 +82,8 @@ h1{
         object-fit: contain;
         height: auto;
     }
+    .input-group{
+        width: auto;
+        margin: auto;
+    }
 }
