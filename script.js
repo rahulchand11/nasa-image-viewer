@@ -44,6 +44,7 @@ fetch(APIURL)
     }else if(data.media_type === 'image'){
         container.replaceChild(imgchange, video);
         imgchange.setAttribute("src", data.url);
+        imgchange.setAttribute("class", "img-fluid");
     }
 }).catch((error) => {
     console.log("error founded", error);
