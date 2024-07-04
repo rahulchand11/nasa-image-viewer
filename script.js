@@ -26,7 +26,7 @@ let video = document.createElement("iframe");
 
 btn.addEventListener("click", function(){
    if(inpvals.value === ""){
-       alert("Please Enter the date")'
+       alert("Please Enter the date")
    }else{
        const APIURL = `https://api.nasa.gov/planetary/apod?date=${inputvals.value}&api_key=${APIKEY}`
    console.log(APIURL);
