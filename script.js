@@ -16,7 +16,6 @@ document.addEventListener("click", function(e){
 // Nasa Image viewer
 const inputvals = document.getElementById('myInput');
 const imgchange = document.querySelector(".img-fluid");
-// const uservalue = inputvals.value;
 const container = document.querySelector(".container-fluid");
 const btn = document.querySelector(".input-group-text");
 const APIKEY = `BoRKVRlEQ9PT7SamJ1IKbVVGEomW3poChnvegMoY`;
