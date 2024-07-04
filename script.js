@@ -25,6 +25,7 @@ let video = document.createElement("iframe");
             video.setAttribute("height", "550px");
 
 btn.addEventListener("click", function(){
+    console.log(inpvals.value);
    if(inpvals.value === ""){
        alert("Please Enter the date")
    }else{
